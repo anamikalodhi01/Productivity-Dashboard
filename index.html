@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Developer Productivity Hub</title>
+</head>
+
+<body>
+    <header>
+        <h1>Productivity Dashboard</h1>
+        <div class="header-right">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-circle-half-stroke theme-icon"></i>
+            <i class="fa-regular fa-user user-icon"></i>
+        </div>
+    </header>
+    <div class="container">
+        <aside>
+            <ul>
+                <li>Overview</li>
+                <li>Productivity</li>
+                <li>Developer Tools</li>
+                <li>AI Tools</li>
+                <li>Coding Tools</li>
+            </ul>
+        </aside>
+        <main>
+            <section class="overview">
+                <h2>Overview</h2>
+                <div class="cards">
+                    <div class="card clock-card">
+                        <div class="clock-card-inner">
+                            <!-- Front of card -->
+                            <div class="clock-card-front">
+                                <div class="card-icon"><i class="fas fa-clock"></i></div>
+                                <h3>Clock</h3>
+                                <p>Click to see time</p>
+                            </div>
+
+                            <!-- Back of card -->
+                            <div class="clock-card-back">
+                                <p class="clock-display">00:00:00</p>
+                                <p>Click to hide</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card weather-card">
+                        <div class="card-icon"><i class="fas fa-sun"></i></div>
+                        <h3>Weather</h3>
+                        <p>Sunny, 25°C</p>
+                    </div>
+                    <div class="card calendar-card">
+                        <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <h3>Calendar</h3>
+                        <p>April 27, 2024</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="productivity">
+                <h2>Productivity</h2>
+                <div class="cards">
+                    <div class="card daily-goals-card">
+                        <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                        <h3>Daily Goals</h3>
+                        <p>Complete 3 tasks</p>
+                    </div>
+                    <div class="card sticky-notes-card">
+                        <div class="card-icon"><i class="fas fa-sticky-note"></i></div>
+                        <h3>Sticky Notes</h3>
+                        <p>Remember to buy groceries</p>
+                    </div>
+                    <div class="card pomodoro-timer-card">
+                        <div class="card-icon"><i class="fas fa-hourglass-end"></i></div>
+                        <h3>Pomodoro Timer</h3>
+                        <p>25 minutes</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="developer-tools">
+                <h2>Developer Tools</h2>
+                <div class="cards">
+                    <div class="card password-generator-card">
+                        <div class="card-icon"><i class="fas fa-key"></i></div>
+                        <h3>Password Generator</h3>
+                        <p>Generate strong passwords</p>
+                    </div>
+                    <div class="card url-shortener-card">
+                        <div class="card-icon"><i class="fas fa-link"></i></div>
+                        <h3>URL Shortener</h3>
+                        <p>Shorten long URLs</p>
+                    </div>
+                    <div class="card qr-generator-card">
+                        <div class="card-icon"><i class="fas fa-qrcode"></i></div>
+                        <h3>QR Generator</h3>
+                        <p>Create QR codes</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ai-tools">
+                <h2>AI Tools</h2>
+                <div class="cards">
+                    <div class="card email-generator-card">
+                        <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email Generator</h3>
+                        <p>Generate professional emails</p>
+                    </div>
+                    <div class="card grammar-checker-card">
+                        <div class="card-icon"><i class="fas fa-spell-check"></i></div>
+                        <h3>Grammar Checker</h3>
+                        <p>Check grammar and spelling</p>
+                    </div>
+                    <div class="card text-summarizer-card">
+                        <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+                        <h3>Text Summarizer</h3>
+                        <p>Summarize text quickly</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="coding-tools">
+                <h2>Coding Tools</h2>
+                <div class="cards">
+                    <div class="card github-profile-card">
+                        <div class="card-icon"><i class="fab fa-github"></i></div>
+                        <h3>Github Profile</h3>
+                        <p>View Github profiles</p>
+                    </div>
+                    <div class="card learning-progress-card">
+                        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Learning Progress</h3>
+                        <p>Track your learning progress</p>
+                    </div>
+                    <div class="card daily-challenge-card">
+                        <div class="card-icon"><i class="fas fa-code"></i></div>
+                        <h3>Daily Challenge</h3>
+                        <p>Complete daily coding challenges</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>By Anamika Lodhi</footer>
+    <script src="js/toggle/theme.js"></script>
+    <script src="js/dashboard/clock.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
