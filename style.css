@@ -616,6 +616,186 @@ section h2:hover::after {
 }
 
 
+
+
+/* ===========================
+   CALENDAR CARD FLIP ANIMATION
+=========================== */
+
+.calendar-card {
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.calendar-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.calendar-card.flipped .calendar-card-inner {
+    transform: rotateY(180deg);
+}
+
+.calendar-card-front,
+.calendar-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.calendar-card-back {
+    transform: rotateY(180deg);
+    background: rgba(99, 102, 241, 0.2);
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+}
+
+.calendar-card-back h2 {
+    font-size: 2.5em;
+    color: var(--primary);
+    margin: 0;
+}
+
+.calendar-card-back p {
+    font-size: 1.2em;
+    color: var(--light);
+}
+
+/* Interactive text for calendar card */
+.calendar-card-front p,
+.calendar-card-back p {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.calendar-card-front p {
+    animation: pulse-click 2s infinite;
+}
+
+.calendar-card-back p {
+    animation: pulse-click 2s infinite;
+}
+
+.calendar-card-front p:hover,
+.calendar-card-back p:hover {
+    transform: scale(1.1);
+    color: var(--primary);
+    text-shadow: 0 0 10px rgba(99, 102, 241, 0.6);
+}
+
+@keyframes pulse-click {
+    0%, 100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+
+
+
+
+
+/* ===========================
+   WEATHER CARD FLIP ANIMATION
+=========================== */
+
+.weather-card {
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.weather-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.weather-card.flipped .weather-card-inner {
+    transform: rotateY(180deg);
+}
+
+.weather-card-front,
+.weather-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.weather-card-back {
+    transform: rotateY(180deg);
+    background: rgba(99, 102, 241, 0.2);
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+}
+
+.weather-card-back h2 {
+    font-size: 2.5em;
+    color: var(--primary);
+    margin: 0;
+}
+
+.weather-card-back p {
+    font-size: 1.2em;
+    color: var(--light);
+}
+
+/* Interactive text for weather card */
+.weather-card-front p,
+.weather-card-back p {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.weather-card-front p {
+    animation: pulse-click 2s infinite;
+}
+
+.weather-card-back p {
+    animation: pulse-click 2s infinite;
+}
+
+.weather-card-front p:hover,
+.weather-card-back p:hover {
+    transform: scale(1.1);
+    color: var(--primary);
+    text-shadow: 0 0 10px rgba(99, 102, 241, 0.6);
+}
+
+@keyframes pulse-click {
+    0%, 100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+
 /* ===========================
    DIFFERENT CARD COLORS
 =========================== */
