@@ -48,15 +48,37 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card weather-card">
-                        <div class="card-icon"><i class="fas fa-sun"></i></div>
-                        <h3>Weather</h3>
-                        <p>Sunny, 25°C</p>
+                     <div class="card weather-card">
+                        <div class="weather-card-inner">
+                            <!-- Front of card -->
+                            <div class="weather-card-front">
+                                <div class="card-icon"><i class="fas fa-sun"></i></div>
+                                <h3>Weather</h3>
+                                <p>Click to see weather</p>
+                            </div>
+
+                            <!-- Back of card -->
+                            <div class="weather-card-back">
+                                <p class="weather-display"></p>
+                                <p>Click to hide</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card calendar-card">
-                        <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
-                        <h3>Calendar</h3>
-                        <p>April 27, 2024</p>
+                     <div class="card calendar-card">
+                        <div class="calendar-card-inner">
+                            <!-- Front of card -->
+                            <div class="calendar-card-front">
+                                <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+                                <h3>Calendar</h3>
+                                <p>Click to see date</p>
+                            </div>
+
+                            <!-- Back of card -->
+                            <div class="calendar-card-back">
+                                <p class="calendar-display">00-00-00</p>
+                                <p>Click to hide</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -149,6 +171,8 @@
     <footer>By Anamika Lodhi</footer>
     <script src="js/toggle/theme.js"></script>
     <script src="js/dashboard/clock.js"></script>
+    <script src="js/dashboard/calendar.js"></script>
+    <script type="module" src="js/dashboard/weather.js"></script>
     <script src="js/app.js"></script>
 </body>
 
